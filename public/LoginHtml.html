@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <link rel="stylesheet" href="LoginCss.css">
+   <script src="LoginJS.js"></script>
+</head>
+<body>
+   <marquee style="color: blue;font-size: xx-large;" direction="right"><b>WELCOME!!!!</b></marquee>
+   
+   <div style="color: blue;text-align: center;margin-top: 50px;font-size: xx-large;" class="login">
+      USER-EMAIL <br>
+      <input type="text" id="userName"><br>
+      <br>
+      PASSWORD <br>
+      <input type="password" id="password"><br>
+      <br>
+      
+      <label class="container">School Officer
+         <input type="radio" checked="checked" name="radio">
+         <span class="checkmark"></span>
+       </label>
+       <label class="container">Zonal Officer
+         <input type="radio" name="radio">
+         <span class="checkmark"></span>
+       </label>
+       <br>
+       <br>
+       <button onclick="read()">LOGIN</button>
+       
+
+   </div>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>

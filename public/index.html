@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <link rel="stylesheet" href="LoginCss.css">
+   
+  
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries 
+<script src="/__/firebase/7.14.0/firebase-analytics.js"></script>-->
+
+<!-- Initialize Firebase -->
+
+</head>
+<body>
+   <marquee style="color:#b33c00;font-size: xx-large;" direction="right"><b>WELCOME!!!!</b></marquee>
+   
+   <div style="color: blue;text-align: center;margin-top: 50px;font-size: xx-large;" class="login">
+      USER-EMAIL <br>
+      <input type="text" id="userName"><br>
+      <br>
+      PASSWORD <br>
+      <input type="password" id="password"><br>
+      <br>
+      
+      <label class="container">School Officer
+         <input type="radio" checked="checked" name="radio">
+         <span class="checkmark"></span>
+       </label>
+       <label class="container">Zonal Officer
+         <input type="radio" name="radio">
+         <span class="checkmark"></span>
+       </label>
+       <br>
+       <br>
+       <button id="loginBtn" onclick="login()">LOGIN</button>
+       
+
+   </div>
+   
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      
+         <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+       
+         <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+         <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+       
+         <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+         <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+       
+         <!-- Add Firebase products that you want to use -->
+         <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+       
+    
+   <script>
+      
+      const firebaseConfig = {
+      apiKey: "AIzaSyD6j8vuPi-XQbltbjzzM2-hbNnUnLCl9EQ",
+      authDomain: "miniproject-c8ce1.firebaseapp.com",
+      databaseURL: "https://miniproject-c8ce1.firebaseio.com",
+      projectId: "miniproject-c8ce1",
+      //storageBucket: "miniproject-c8ce1.appspot.com",
+      //messagingSenderId: "1027297177485",
+      appId: "1:1027297177485:web:17473be6beb0fc818797c4",
+      //measurementId: "G-Y0TKXH449K"
+   };
+   
+
+   firebase.initializeApp(firebaseConfig);
+   //making auth and firestore services
+   const auth=firebase.auth();
+   const db=firebase.firestore();
+
+   //update firestore settings
+   //db.settings({timestampSnapshots:true});
+
+
+
+   </script>
+
+
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="LoginJS.js"></script>
+
+</body>
+</html>
